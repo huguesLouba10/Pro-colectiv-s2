@@ -4,6 +4,7 @@ import "./reservation.css";
 function ReservationPage() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
+    const[classroom,setclassroom] = useState('')
     const [date, setDate] = useState('');
     const [StartTime,setStartTime] = useState('');
     const [EndTime, setEndTime] = useState('');
@@ -27,6 +28,10 @@ function ReservationPage() {
                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </label>
                 <br />
+                <label>
+                    classroom:
+                    <input type="text" value={classroom} onChange={(e)=>setclassroom(e.target.value)}/>
+                </label>
                 <label>
                     Date of Reservation:
                     <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />

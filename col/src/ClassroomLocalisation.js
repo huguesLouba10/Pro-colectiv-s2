@@ -28,31 +28,31 @@ function MyTable() {
                 <tr>
                     <td>A02</td>
                     <td>
-                        <button onClick={() => handleButtonClick('images/A02.jpg')}>Click Me</button>
+                        <button onClick={() => handleButtonClick('images/plan.jpg')}>Click Me</button>
                     </td>
                 </tr>
                 <tr>
                     <td>F206</td>
                     <td>
-                        <button onClick={() => handleButtonClick('images/eta2.jpg')}>Click Me</button>
+                        <button onClick={() => handleButtonClick('images/eta22.jpg')}>Click Me</button>
                     </td>
                 </tr>
                 <tr>
                     <td>A32</td>
                     <td>
-                        <button onClick={() => handleButtonClick('images/eta3.jpg')}>Click Me</button>
+                        <button onClick={() => handleButtonClick('images/et33.jpg')}>Click Me</button>
                     </td>
                 </tr>
                 <tr>
                     <td>402</td>
                     <td>
-                        <button onClick={() => handleButtonClick('images/eat4.jpg')}>Click Me</button>
+                        <button onClick={() => handleButtonClick('images/eta44.jpg')}>Click Me</button>
                     </td>
                 </tr>
                 <tr>
                     <td>505</td>
                     <td>
-                        <button onClick={() => handleButtonClick('images/eta5.jpg')}>Click Me</button>
+                        <button onClick={() => handleButtonClick('images/5.jpg')}>Click Me</button>
                     </td>
                 </tr>
                 </tbody>

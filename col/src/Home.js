@@ -2,7 +2,6 @@ import React from 'react';
 import RESERVATION from './RESERVATION';
 import './table.css';
 
-
 class ClassroomTable extends React.Component {
     constructor(props) {
         super(props);
@@ -17,6 +16,13 @@ class ClassroomTable extends React.Component {
             showForm: true,
             selectedClassroom: classroom
         });
+    }
+
+    handleDetailsClick = (classroom) => {
+        alert(`Classroom name: ${classroom.name}\nCapacity: ${classroom.capacity}\nFloor: ${classroom.floor}
+    this classroom can be booked only from Monday to friday and from 8am to 18pm
+        `);
+
     }
 
     handleFormClose = () => {
@@ -42,8 +48,9 @@ class ClassroomTable extends React.Component {
                 <td>{classroom.floor}</td>
                 <td>
                     <button onClick={() => this.handleReserveClick(classroom)}>Reserve</button>
-
-                    <button onClick={()=>this.handleDetailsClick(classroom)}>Details</button>
+                </td>
+                <td>
+                    <button onClick={() => this.handleDetailsClick(classroom)}>Details</button>
                 </td>
             </tr>
         ));
@@ -57,6 +64,7 @@ class ClassroomTable extends React.Component {
                         <th>Capacity</th>
                         <th>Floors</th>
                         <th>Reservation</th>
+                        <th>Details</th>
                     </tr>
                     </thead>
                     <tbody>
